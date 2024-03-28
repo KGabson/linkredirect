@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">>
     <title>Redirecting...</title>
-    <script type="text/javascript">
-        window.location.href = "https://www.youtube.com/watch?v=lltlRkgpOYM";
-    </script>
 </head>
 <body>
     <p>If you are not redirected, <a href="https://www.youtube.com/watch?v=lltlRkgpOYM"></a>.</p>
+
+    <a id="link" href="https://www.youtube.com/watch?v=lltlRkgpOYM" target="_blank">Click Here To Watch</a>
+    <script>
+        setTimeout(function(){
+            var link = document.getElementById('link');
+            link.click();
+            //window.location.href = 'https://www.youtube.com/watch?v=lltlRkgpOYM';
+        }, 2000);
+       
+</script>
 </body>
 </html>
